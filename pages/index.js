@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Header from "../components/Header"
 import Banner from "../components/Banner"
+import SmallCard from "../components/SmallCard";
 
 export default function Home( { exploreData } ) {
   return (
@@ -10,7 +11,7 @@ export default function Home( { exploreData } ) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Header></Header>
+      <Header/>
       
       <Banner/>
 
@@ -20,10 +21,16 @@ export default function Home( { exploreData } ) {
            </h2>
 
            {/* Pull some data from a server - API endpoints */}
-           {exploreData.map( item =>(
-             // eslint-disable-next-line react/jsx-key
-             <h1>{item.location}</h1>
+          <div className="gird grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-slate-300">
+           {exploreData?.map(({img, distance, location}) =>(
+              <SmallCard
+              key={img}
+                img={img} 
+                distance={distance}
+                location={location}
+              />
            ))}
+          </div>
         </section>
       </main>
 
@@ -32,7 +39,7 @@ export default function Home( { exploreData } ) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch ('https://links.papareact.com/pyp'). 
+  const exploreData = await fetch ("https://links.papareact.com/pyp"). 
   then(
     (res) => res.json()
   );
