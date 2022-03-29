@@ -13,7 +13,6 @@ function SmallCard({img, location, distance}) {
               alt='where visit'
               className="rounded-lg"
           />
-
       </div>
     {/*right*/}
       <div> 
