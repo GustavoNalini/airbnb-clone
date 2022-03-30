@@ -4,12 +4,13 @@ import Banner from "../components/Banner"
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 
 export default function Home( { exploreData, cardsData } ) {
   return (
     <div>
       <Head>
-        <title>Papa airbnb</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
@@ -23,7 +24,7 @@ export default function Home( { exploreData, cardsData } ) {
            </h2>
 
            {/* Pull some data from a server - API endpoints */}
-          <div className="gird grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-slate-300">
+          <div className="gird grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
            {exploreData?.map(({img, distance, location}) =>(
               <SmallCard
               key={img}
@@ -55,6 +56,8 @@ export default function Home( { exploreData, cardsData } ) {
           buttonText="Get Inspired"
         />
       </main>
+
+      <Footer />
 
     </div>
   )
