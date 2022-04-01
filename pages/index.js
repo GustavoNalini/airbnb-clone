@@ -24,10 +24,10 @@ export default function Home( { exploreData, cardsData } ) {
            </h2>
 
            {/* Pull some data from a server - API endpoints */}
-          <div className="gird grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="  gird grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 border-2  border-inherit rounded-lg shadow-2xl">
            {exploreData?.map(({img, distance, location}) =>(
               <SmallCard
-              key={img}
+                key={img}
                 img={img} 
                 distance={distance}
                 location={location}
