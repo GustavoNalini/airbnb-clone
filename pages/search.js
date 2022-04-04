@@ -54,8 +54,8 @@ function Search({ searchResults }) {
             </div>
         </section>
         
-       {/* <section className="min-w-[600px]">
-             <Map />
+        {/*<section className="hidden xl:inline-flex xl:mix-w-[600px]">
+              <Map />
         </section>*/}
       </main>
       <Footer />

@@ -55,7 +55,7 @@ function Header ({ placeholder }) {
          {/* left */}
 
          <div 
-         onClick={() => router.push('index.js')}
+         onClick={() => router.push('/')}
          className="relative flex items-center h-10
             cursor-pointer my-auto">
               
