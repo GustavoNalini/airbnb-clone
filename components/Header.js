@@ -1,17 +1,11 @@
-import Image from "next/image"
+import Image from "next/image";
 import React from "react";
-import { 
-  GlobeAltIcon,
-  MenuIcon,
-  UserIcon,
-  UserCircleIcon,
-  SearchIcon,
- } from '@heroicons/react/solid'
+import { GlobeAltIcon, MenuIcon, UserIcon, UserCircleIcon, SearchIcon } from '@heroicons/react/solid';
 import { useState } from "react/cjs/react.development";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
-import { useRouter} from 'next/dist/client/router'
+import { useRouter} from 'next/dist/client/router';
 
 
 function Header ({ placeholder }) {
