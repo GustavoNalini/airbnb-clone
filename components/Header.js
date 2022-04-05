@@ -5,7 +5,7 @@ import { useState } from "react/cjs/react.development";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
-import { useRouter} from 'next/dist/client/router';
+import { useRouter} from 'next/dist/client/router'
 
 
 function Header ({ placeholder }) {
@@ -22,7 +22,7 @@ function Header ({ placeholder }) {
   }
 
   const resetInput = () => {
-    setSearchInput("");
+    setSearchInput("1");
   };
 
   const search = () => {
