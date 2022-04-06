@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { GlobeAltIcon, MenuIcon, UserIcon, UserCircleIcon, SearchIcon } from '@heroicons/react/solid';
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
@@ -49,7 +49,7 @@ function Header ({ placeholder }) {
          {/* left */}
 
          <div 
-         onClick={() => router.push('')}
+         onClick={() => router.push('/')}
          className="relative flex items-center h-10
             cursor-pointer my-auto">
               
