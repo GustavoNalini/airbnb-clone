@@ -22,7 +22,7 @@ function Header ({ placeholder }) {
   }
 
   const resetInput = () => {
-    setSearchInput("1");
+    setSearchInput("");
   };
 
   const search = () => {
